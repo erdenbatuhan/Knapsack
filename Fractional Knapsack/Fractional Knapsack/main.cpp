@@ -21,7 +21,7 @@ struct DensityComparator {
     }
 };
 
-double FractionalKnapsack(int n, int capacity, double weights[], double values[]) {
+double Knapsack(int n, int capacity, double weights[], double values[]) {
     Spice spices[MAX_N];
     double M[MAX_N], collected = 0;
     
@@ -49,7 +49,7 @@ double FractionalKnapsack(int n, int capacity, double weights[], double values[]
 }
 
 void readInput(int &n, int &capacity, double weights[], double values[]) {
-    freopen("/Users/batuhan/Documents/Xcode Workspace/Fractional Knapsack/items", "r", stdin);
+    freopen("/Users/batuhan/Documents/Xcode Workspace/Knapsack/Fractional Knapsack/items", "r", stdin);
     
     scanf("%d", &capacity);
     while (scanf("%lf%lf", &weights[n], &values[n]) == 2)
@@ -64,7 +64,7 @@ int main(int argc, const char * argv[]) {
     
     readInput(n, capacity, weights, values);
     
-    printf("Optimal Weight: %f\n", FractionalKnapsack(n, capacity, weights, values));
+    printf("Optimal Weight: %f\n", Knapsack(n, capacity, weights, values));
     return 0;
 }
 

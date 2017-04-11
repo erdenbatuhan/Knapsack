@@ -66,7 +66,7 @@ int Knapsack(int n, int capacity, int weights[], int values[]) {
 }
 
 void readInput(int &n, int &capacity, int weights[], int values[]) {
-    freopen("/Users/batuhan/Documents/Xcode Workspace/0-1 Knapsack/items", "r", stdin);
+    freopen("/Users/batuhan/Documents/Xcode Workspace/Knapsack/0-1 Knapsack/items", "r", stdin);
     
     scanf("%d", &capacity);
     while (scanf("%d%d", &weights[n], &values[n]) == 2)
