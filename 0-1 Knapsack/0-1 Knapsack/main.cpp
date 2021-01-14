@@ -81,7 +81,7 @@ int main(int argc, const char * argv[]) {
     readInput(n, capacity, weights, values);
     
     printf("Optimal Weight (bottom-up): %d\n", Knapsack(n, capacity, weights, values));
-    printf("Optimal Weight (top-down, Memoization): %d\n", MemoryFunctionKnapsack(n, capacity, weights, values));
+    printf("Optimal Weight (top-down, Memorization): %d\n", MemoryFunctionKnapsack(n, capacity, weights, values));
     printf("Optimal Weight (top-down, Pure Recursion): %d\n", PureRecursiveKnapsack(n, capacity, weights, values));
     return 0;
 }
